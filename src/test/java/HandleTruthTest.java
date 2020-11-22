@@ -44,6 +44,31 @@ public class HandleTruthTest {
         Set<String> set3 = new HashSet<>(Arrays.asList("live", "in"));
         test3.put(2, set3);
 
+        //test case 4
+        TreeMap<Integer, Set<String>> test4 = new TreeMap<>(Collections.reverseOrder());
+
+        Set<String> set5 = new HashSet<>(Arrays.asList("yes"));
+        test4.put(4, set5);
+
+        Set<String> set6 = new HashSet<>(Arrays.asList("maybe"));
+        test4.put(1, set6);
+
+        Set<String> set7 = new HashSet<>(Arrays.asList("no"));
+        test4.put(3, set7);
+
+        //test case 5
+        TreeMap<Integer, Set<String>> test5 = new TreeMap<>(Collections.reverseOrder());
+
+        Set<String> set8 = new HashSet<>(Arrays.asList("html"));
+        test5.put(3, set8);
+
+        Set<String> set9 = new HashSet<>(Arrays.asList("java", "c#"));
+        test5.put(2, set9);
+
+        Set<String> set10 = new HashSet<>(Arrays.asList("javascript"));
+        test5.put(1, set10);
+
+
 
 
 
@@ -52,6 +77,9 @@ public class HandleTruthTest {
         expectedCases[0] = test1;
         expectedCases[1] = test2;
         expectedCases[2] = test3;
+        expectedCases[3] = test4;
+        expectedCases[4] = test5;
+
 
 
 
