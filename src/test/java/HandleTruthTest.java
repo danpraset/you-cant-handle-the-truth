@@ -89,7 +89,8 @@ public class HandleTruthTest {
         expectedCases[1] = test2;
         expectedCases[2] = test3;
         expectedCases[3] = test4;
-
+        expectedCases[4] = test5;
+        expectedCases[5] = test6;
 
         for (int i = 0; i < testCases.length; i++) {
             TreeMap<Integer, Set<String>> actual = HandleTruth.wordCount(testCases[i]);
@@ -98,5 +99,4 @@ public class HandleTruthTest {
         }
     }
 
-}
 }
