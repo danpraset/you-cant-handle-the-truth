@@ -68,19 +68,27 @@ public class HandleTruthTest {
         Set<String> set10 = new HashSet<>(Arrays.asList("javascript"));
         test5.put(1, set10);
 
+        //test case 6
+        TreeMap<Integer, Set<String>> test6 = new TreeMap<>(Collections.reverseOrder());
 
+        Set<String> set11 = new HashSet<>(Arrays.asList("extra", "coding"));
+        test6.put(1, set11);
 
+        Set<String> set12 = new HashSet<>(Arrays.asList("sauce"));
+        test6.put(3, set12);
 
+        Set<String> set13 = new HashSet<>(Arrays.asList("dip"));
+        test6.put(2, set13);
 
+        Set<String> set14 = new HashSet<>(Arrays.asList("six"));
+        test6.put(4, set14);
 
+        // set the expected cases to each test case
         TreeMap<Integer, Set<String>>[] expectedCases = new TreeMap[6];
         expectedCases[0] = test1;
         expectedCases[1] = test2;
         expectedCases[2] = test3;
         expectedCases[3] = test4;
-        expectedCases[4] = test5;
-
-
 
 
         for (int i = 0; i < testCases.length; i++) {
